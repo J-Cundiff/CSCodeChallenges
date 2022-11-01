@@ -16,23 +16,23 @@ namespace CSCodeChallenges
                  return 0;
             }
 
-            // Initialize first two even Fibonacci numbers and their sum
+            //Initialize first two even Fibonacci numbers and their sum
             int eFib1 = 0;
             int eFib2 = 2;
             int sum = eFib1 + eFib2;
 
-            // calculating sum of even Fibonacci value
+            //calculating sum of even Fibonacci value
             while (eFib2 <= limit)
             {
 
-                // get next even value of Fibonacci sequence
+                //get next even value of Fibonacci sequence
                 int eFib3 = 4 * eFib2 + eFib1;
 
-                // If we go beyond limit, we break loop
+                //If we go beyond limit, we break loop
                 if (eFib3 > limit)
                     break;
 
-                // Move to next even number and update sum
+                //Move to next even number and update sum
                 eFib1 = eFib2;
                 eFib2 = eFib3;
                 sum += eFib2;
